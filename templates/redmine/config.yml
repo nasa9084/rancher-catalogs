@@ -1,0 +1,8 @@
+name: Redmine
+description: |
+  Redmine is a flexible project management web application written in Ruby.
+version: 3.4.2-rancher
+category: Project Management
+maintainer: nasa9084<nasa.9084.bassclarinet@gmail.com>
+license: GPL
+projectURL: http://www.redmine.org/

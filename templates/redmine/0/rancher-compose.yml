@@ -1,0 +1,21 @@
+.catalog:
+  name: "Redmine"
+  version: "3.4.2-rancher"
+  description: "Project Management tool written in Ruby"
+  uuid: "3.4.2-rancher"
+  minimum_rancher_version: "v1.4.1"
+  questions:
+
+    - variable: "HTTP_PORT"
+      label: "HTTP Port"
+      description: "HTTP Port"
+      required: true
+      type: "int"
+      default: "80"
+
+    - variable: "MYSQL_DB_PASSWORD"
+      label: "MySQL Password"
+      description: "MySQL Password"
+      required: true
+      type: "string"
+      default: "secret"
