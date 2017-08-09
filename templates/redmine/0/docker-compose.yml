@@ -10,10 +10,10 @@ services:
       - db:db
     environment:
       REDMINE_DB_MYSQL: db
-      REDMINE_DB_PASSWORD: "${REDMINE_DB_PASSWORD}"
+      REDMINE_DB_PASSWORD: "${MYSQL_DB_PASSWORD}"
 
   db:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: "${REDMINE_DB_PASSWORD}"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_DB_PASSWORD}"
       MYSQL_DATABASE: redmine
